@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>
+    ShopPulse | Discover Your Next Favourite</title>
+    <meta name="description" content="ShopPulse - Discover quality products at great prices with fast shipping and incredible everyday deals.">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://shoppulse.com/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shoppulse.com/">
+    <meta property="og:title" content="ShopPulse | Discover Your Next Favourite">
+    <meta property="og:description" content="Discover quality products at great prices with fast shipping and incredible everyday deals.">
+    <meta property="og:image" content="https://shoppulse.com/images/og-cover.jpg">
+
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ShopPulse | Discover Your Next Favourite">
+    <meta name="twitter:description" content="Discover quality products at great prices with fast shipping and incredible everyday deals.">
+    <meta name="twitter:image" content="https://shoppulse.com/images/og-cover.jpg">
+
+    <!-- Preconnect for performance optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Deferred Scripts -->
+    <script src="js/api.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Accessibility: Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="index.html" class="logo" aria-label="ShopPulse Home">
+                Shop<span>Pulse</span>
+            </a>
+
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="products.html">Products</a>
+                <a href="#categories">Categories</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="login.html" class="login-link">Login</a>
+
+                <a href="cart.html" class="cart-button" aria-label="Shopping Cart">
+                    <span>Cart</span>
+                    <span id="cart-count" class="cart-badge" aria-live="polite" aria-atomic="true">0</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="eyebrow">YOUR EVERYDAY SHOPPING DESTINATION</p>
+
+                    <h1 id="hero-title">
+                        Find what you love.
+                        <span>Shop smarter.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Explore products you'll love, discover new favourites,
+                        and enjoy a simpler shopping experience.
+                    </p>
+
+                    <a href="products.html" class="primary-button">
+                        Explore Products <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <div class="hero-visual" role="img" aria-label="Shopping illustration depicting a shopping bag icon">
+                    <div class="hero-circle">
+                        <span class="hero-emoji" aria-hidden="true">🛍️</span>
+                    </div>
+
+                    <div class="floating-card">
+                        ✨ Your next favourite awaits
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="section container" id="categories" aria-labelledby="categories-heading">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">EXPLORE</p>
+                    <h2 id="categories-heading">Shop by category</h2>
+                </div>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="products.html?category=Electronics" class="category-card">
+                    <span class="category-icon" aria-hidden="true">🎧</span>
+                    <h3>Electronics</h3>
+                    <p>Everyday technology</p>
+                </a>
+
+                <a href="products.html?category=Fashion" class="category-card">
+                    <span class="category-icon" aria-hidden="true">👕</span>
+                    <h3>Fashion</h3>
+                    <p>Find your style</p>
+                </a>
+
+                <a href="products.html?category=Home" class="category-card">
+                    <span class="category-icon" aria-hidden="true">🏠</span>
+                    <h3>Home &amp; Living</h3>
+                    <p>Make yourself at home</p>
+                </a>
+
+                <a href="products.html?category=Accessories" class="category-card">
+                    <span class="category-icon" aria-hidden="true">⌚</span>
+                    <h3>Accessories</h3>
+                    <p>Details that matter</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="section featured-section" aria-labelledby="featured-heading">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">HANDPICKED FOR YOU</p>
+                        <h2 id="featured-heading">Featured products</h2>
+                    </div>
+
+                    <a href="products.html" class="text-link">
+                        View all products <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <div id="featured-products" class="product-grid" aria-live="polite" aria-busy="true">
+                    <p class="loading-message">
+                        Loading products...
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="container cta-section" aria-labelledby="cta-heading">
+            <div class="cta-content">
+                <p class="eyebrow">WELCOME TO SHOPPULSE</p>
+
+                <h2 id="cta-heading">Your next great find is just a click away.</h2>
+
+                <a href="products.html" class="primary-button">
+                    Start Shopping <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="index.html" class="logo" aria-label="ShopPulse Home">
+                Shop<span>Pulse</span>
+            </a>
+
+            <p>
+                Your everyday shopping destination.
+            </p>
+
+            <p class="copyright">
+                &copy; <span id="current-year">2026</span> ShopPulse. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
